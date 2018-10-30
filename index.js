@@ -6,7 +6,7 @@ dodger.style.left = '280px'
 
 let dodgerPosition = 0
 
-function moveDodger() {
+function moveDodger(event) {
   
 }
 
