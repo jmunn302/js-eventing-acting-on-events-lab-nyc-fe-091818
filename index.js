@@ -1,3 +1,3 @@
 const dodger = document.getElementById('dodger')
 
-dodger.style.backgroundColor = 'brightpink'
+dodger.style.backgroundColor = 'pink'
