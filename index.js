@@ -32,6 +32,7 @@ function moveDodgerRight(event) {
     if (oldLocation === 0) {
       return
     }
+    console.log(oldLocation)
     oldLocation = parseInt(oldLocation, 10)
     dodger.style.left = (oldLocation + 10) +'px'
   }
