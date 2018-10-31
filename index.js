@@ -8,12 +8,13 @@ function moveDodger(event) {
   const keycode = event.which
   if (keycode === 37) { 
     let oldLeft = dodger.style.left
+      if (oldLeft === '0px') {
+      return
+    }
     console.log(oldLeft)
     oldLeft = parseInt(oldLeft, 10)
     dodger.style.left = (oldLeft - 10) + 'px'
-    if (oldLeft === '0px') {
-      return
-    }
+  
     
   } else if (keycode === 39) { 
     //right arrow
