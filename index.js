@@ -29,7 +29,7 @@ function moveDodger(event) {
 function moveDodgerRight(event) {
   if (event.which === 39) {
     let oldLocation = dodger.style.left
-    if (oldLocation === 360) {
+    if (dodger.style.left === 360) {
       return
     }
     console.log(oldLocation)
