@@ -9,6 +9,7 @@ function moveDodger(event) {
   if (keycode === 37) { 
     let oldLeft = dodger.style.left
     dodger.style.left = oldLeft - '10px'
+    console.log(dodger.style.left)
     
   } else if (keycode === 39) { 
     //right arrow
