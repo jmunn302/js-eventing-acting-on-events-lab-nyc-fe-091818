@@ -19,10 +19,10 @@ function moveDodger(event) {
     moveDodgerRight(event)
     
     } else if (keycode === 38) {
-      moveDodgerUp
+      moveDodgerUp(event)
       
  } else if (keycode === 40) {
-   moveDodgerDown
+   moveDodgerDown(event)
 }
 }
 
@@ -47,6 +47,18 @@ function moveDodgerUp(event) {
     console.log(oldLocation)
     oldLocation = parseInt(oldLocation, 10)
     dodger.style.bottom = (oldLocation + 10) +'px'
+  }
+}
+
+function moveDodgerDown(event) {
+  if (event.which === 40) {
+    let oldLocation = dodger.style.bottom
+    if (dodger.style.left === '0px') {
+      return
+    }
+    console.log(oldLocation)
+    oldLocation = parseInt(oldLocation, 10)
+    dodger.style.bottom = (oldLocation - 10) +'px'
   }
 }
 
