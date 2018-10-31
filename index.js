@@ -38,4 +38,16 @@ function moveDodgerRight(event) {
   }
 }
 
+function moveDodgerUp(event) {
+  if (event.which === 38) {
+    let oldLocation = dodger.style.left
+    if (dodger.style.left === '360px') {
+      return
+    }
+    console.log(oldLocation)
+    oldLocation = parseInt(oldLocation, 10)
+    dodger.style.left = (oldLocation + 10) +'px'
+  }
+}
+
 document.addEventListener('keydown', moveDodger)
