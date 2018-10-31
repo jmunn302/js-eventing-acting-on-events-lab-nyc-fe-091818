@@ -35,6 +35,7 @@ function moveDodgerRight(event) {
     console.log(oldLocation)
     oldLocation = parseInt(oldLocation, 10)
     dodger.style.left = (oldLocation + 10) +'px'
+    dodger.style.backgroundColor = 'green'
   }
 }
 
@@ -47,6 +48,7 @@ function moveDodgerUp(event) {
     console.log(oldLocation)
     oldLocation = parseInt(oldLocation, 10)
     dodger.style.bottom = (oldLocation + 10) +'px'
+    dodger.style.backgroundColor = 'teal'
   }
 }
 
@@ -59,6 +61,7 @@ function moveDodgerDown(event) {
     console.log(oldLocation)
     oldLocation = parseInt(oldLocation, 10)
     dodger.style.bottom = (oldLocation - 10) +'px'
+    dodger.style.backgroundColor = 'blue'
   }
 }
 
