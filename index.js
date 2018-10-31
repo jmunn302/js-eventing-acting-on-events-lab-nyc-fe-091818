@@ -14,6 +14,7 @@ function moveDodger(event) {
     console.log(oldLeft)
     oldLeft = parseInt(oldLeft, 10)
     dodger.style.left = (oldLeft - 10) + 'px'
+    dodger.style.backgroundColor = 'pink'
     
   } else if (keycode === 39) { 
     moveDodgerRight(event)
