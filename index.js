@@ -2,13 +2,22 @@ const dodger = document.getElementById('dodger')
 
 dodger.style.backgroundColor = 'pink'
 
-dodger.style.left = '280px'
-
 let dodgerPosition = 0
 
 function moveDodger(event) {
-  console.log(event.which)
-  
+  const keycode = event.which
+  if (keycode === 37) { 
+    dodger.style.right = '380px'
+    
+  } else if (keycode === 39) { 
+    //right arrow
+    
+    } else if (keycode === 38) {
+      //up arrow
+      
+ } else if (keycode === 40) {
+   //down arrow
+}
 }
 
-dodger.addEventListener('keydown', moveDodger)
+document.addEventListener('keydown', moveDodger)
