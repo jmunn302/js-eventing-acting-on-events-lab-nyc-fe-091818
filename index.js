@@ -14,7 +14,6 @@ function moveDodger(event) {
     console.log(oldLeft)
     oldLeft = parseInt(oldLeft, 10)
     dodger.style.left = (oldLeft - 10) + 'px'
-  
     
   } else if (keycode === 39) { 
     //right arrow
@@ -25,6 +24,17 @@ function moveDodger(event) {
  } else if (keycode === 40) {
    //down arrow
 }
+}
+
+function moveDodgerRight(event) {
+  if (event.which === 39) {
+    let oldLocation = dodger.style.left
+    if (oldLocation === 0) {
+      return
+    }
+    oldLocation = parseInt(oldLocation, 10)
+    dodger.style.left = (oldLocation + 10) +'px'
+  }
 }
 
 document.addEventListener('keydown', moveDodger)
