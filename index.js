@@ -41,7 +41,7 @@ function moveDodgerRight(event) {
 function moveDodgerUp(event) {
   if (event.which === 38) {
     let oldLocation = dodger.style.bottom
-    if (dodger.style.left === '380px') {
+    if (dodger.style.bottom === '380px') {
       return
     }
     console.log(oldLocation)
@@ -53,7 +53,7 @@ function moveDodgerUp(event) {
 function moveDodgerDown(event) {
   if (event.which === 40) {
     let oldLocation = dodger.style.bottom
-    if (dodger.style.left === '0px') {
+    if (dodger.style.bottom === '0px') {
       return
     }
     console.log(oldLocation)
