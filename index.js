@@ -16,7 +16,7 @@ function moveDodger(event) {
     dodger.style.left = (oldLeft - 10) + 'px'
     
   } else if (keycode === 39) { 
-    //right arrow
+    moveDodgerRight
     
     } else if (keycode === 38) {
       //up arrow
